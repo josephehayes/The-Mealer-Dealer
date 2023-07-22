@@ -1,0 +1,21 @@
+<section class="card">
+  <a href="{{id}}">
+    <header class="recipe-name">{{name}}</header>
+
+    <div class="card-body">
+      <img src="{{image}}" alt="{{description}}" class="meal_results_img">
+      <p>Main Protein: {{main_protein}}</p>
+      <p>Description: {{description}}</p>
+      <p>Prep Time: {{prep_time}}</p>
+      <p>Cook Time: {{cook_time}}</p>
+      <p>Servings: {{servings}}</p>
+      <div class="switch">
+        <label>
+          <input type="checkbox" data-id="{{id}}" class="cooked-toggle" id="{{id}}" {{#if user_to_recipe.cooked}} checked="true" {{/if}}>
+          <span class="lever"></span>
+          Cooked
+        </label>
+      </div>      
+    </div>
+  </a>
+</section>
